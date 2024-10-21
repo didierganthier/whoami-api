@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 });
 
-app.get('/whoami', (req, res) => {
+app.get('/api/whoami', (req, res) => {
     const ipaddress = req.ip;
     const language = req.headers['accept-language'];
     const software = req.headers['user-agent'];
